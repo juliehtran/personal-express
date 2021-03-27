@@ -1,0 +1,49 @@
+body{
+    background-image: url("message-bottle-bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.field{
+    margin-top: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.form-container{
+    margin-top: 100px;
+}
+
+.border-radius{
+    border-radius: 20px;
+}
+
+.box-size{
+    width: 70%;
+    padding: 20px;
+}
+
+.button{
+    width: 10%;
+}
+
+h1{
+    font-family: 'Archivo Black', sans-serif;    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+h3{
+    font-family: 'Courgette', cursive;
+    color: #FFDE59
+}
+
+.modal-body{
+    display: block;
+    text-align: center;
+}

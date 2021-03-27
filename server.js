@@ -2,7 +2,7 @@
 const emailer = require('./emailer');
 
 if (!process.env.EMAIL || !process.env.PASSWORD) {
-  throw `Emailer credentials missing.`
+  throw `Emailer credentials missing. Please set EMAIL and PASSWORD for a gmail account in the environment.`
 }
 
 // express is our http server framework

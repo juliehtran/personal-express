@@ -2,43 +2,62 @@
 <html>
 
 <head>
-	<title>Hello, I'm Julie</title>
+	<title>Personal Express</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="icon" type="image/png" href="favicon.png" />
 	<link rel="stylesheet" href="css/styles.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courgette&display=swap" rel="stylesheet">
 <body>
 	<div>
-		<section>
-			<h2>Get in touch</h2>
+		<section class="form-container">
+			<h1>Send a Message in a Bottle</h1>
+			<h3>Maybe you'll get something in return</h3>
 			<form id="contact-form" action="/contact">
 				<div class="fields">
 					<div class="field half">
-						<input type="text" name="name" id="name" placeholder="Name" />
+						<input class="border-radius box-size" type="text" name="name" id="name" placeholder="Name" />
 					</div>
 					<div class="field half">
-						<input type="email" name="email" id="email" placeholder="Email" />
+						<input class="border-radius box-size" type="email" name="email" id="email" placeholder="Email" />
 					</div>
 					<div class="field">
-						<textarea name="message" id="message" placeholder="Message"></textarea>
+						<textarea class="border-radius box-size" name="message" id="message" placeholder="Message"></textarea>
 					</div>
 				</div>
 				<ul class="actions">
-					<li><input type="submit" value="Send" class="primary" /></li>
+					<li class="button"><input class="border-radius" type="submit" value="Send" class="primary" /></li>
 				</ul>
 			</form>
 		</section>
-		<ul class="copyright">
-			<li>&copy; Julie Tran. All rights reserved</li>
-		</ul>
+	
 	</div>
-	<script src="js/jquery.min.js"></script>
+	<div class="modal" id="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">A bottle washed up on the shore!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+					<img src="css/bottle.png" alt="bottle">
+					<p>"I bought a pair of pants that feels heaven sent. From one stranger to another, I hope you find your favorite pair of pants."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 	<script src="js/client.js"></script>
-
 </body>
 
 </html>
